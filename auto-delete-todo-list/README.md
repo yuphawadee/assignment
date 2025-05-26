@@ -1,29 +1,33 @@
 # Auto Delete Todo List
 
-สามารถเข้าชมและทดลองใช้งานได้จากลิงก์ : https://assignment-git-main-yuphawadee-ps-projects.vercel.app/
+Live Demo: https://assignment-git-main-yuphawadee-ps-projects.vercel.app/
 
-## คำอธิบายโปรเจกต์
-โปรเจกต์นี้เป็นระบบรายการสิ่งที่ต้องทำที่แบ่งรายการออกเป็น 2 ประเภทคือ **ผลไม้ (Fruit)** และ **ผัก (Vegetable)**  
-- รายการหลักจะแสดงปุ่มสำหรับแต่ละรายการ  
-- เมื่อกดปุ่ม รายการนั้นจะถูกย้ายไปยังคอลัมน์ Fruit หรือ Vegetable ตามประเภท  
-- รายการที่ย้ายไปจะแสดงอยู่ในคอลัมน์นั้นเป็นเวลา 5 วินาที แล้วจะถูกย้ายกลับมาด้านล่างของรายการหลัก  
-- สามารถคลิกที่รายการในคอลัมน์ผลไม้/ผักเพื่อย้อนกลับไปยังรายการหลักได้ทันที
+## Project Description
+This project is a simple Todo List system that categorizes tasks into Fruit and Vegetable.
 
-## วิธีใช้งาน
+- The main list displays buttons for each todo item.
+- When a button is clicked, the corresponding item is moved to the Fruit or Vegetable column based on its type.  
+- Items will stay in the right column for 5 seconds before automatically returning to the bottom of the main list.
+- Users can also click on any item in the side columns to move it back to the main list immediately.
 
-1. เปิดหน้าเว็บและดูรายการสิ่งที่ต้องทำ  
-2. คลิกปุ่มรายการใด ๆ เพื่อย้ายไปยังคอลัมน์ที่ตรงกับประเภท  
-3. รายการที่ย้ายไปจะถูกย้ายกลับมาอัตโนมัติหลัง 5 วินาที หรือคลิกที่รายการในคอลัมน์ขวาเพื่อย้อนกลับทันที
 
-## เทคโนโลยีที่ใช้
+
+## How to Use
+
+1. Open the web page to view the list of todo items.
+2. Click on an item's button to move it to the appropriate column.
+3. The item will automatically return after 5 seconds, or click on it to move it back instantly.
+
+## Tech Stack
 
 - React 
 - TypeScript  
 - Tailwind CSS
 - Vite
 
-## วิธีรันโปรเจกต์ (สำหรับคนพัฒนาต่อ)
+## Getting Started (for Developers)
 
 ```bash
 npm install
 npm run dev
+```
