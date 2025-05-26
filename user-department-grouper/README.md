@@ -23,15 +23,20 @@ This project fetches user data from [dummyjson.com](https://dummyjson.com/users)
 ## How to Run
 
 ### 1. Install dependencies
+
 ```bash
 npm install
 ```
+
 ### 2. Run the server
-```bush
+
+```bash
 npx nodemon src/server.ts
 ```
+
 ### 3.Run test
-```bush
+
+```bash
 npx vitest
 ```
 
