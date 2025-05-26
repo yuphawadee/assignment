@@ -1,54 +1,29 @@
-# React + TypeScript + Vite
+# Auto Delete Todo List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+สามารถเข้าชมและทดลองใช้งานได้จากลิงก์ : https://assignment-git-main-yuphawadee-ps-projects.vercel.app/
 
-Currently, two official plugins are available:
+## คำอธิบายโปรเจกต์
+โปรเจกต์นี้เป็นระบบรายการสิ่งที่ต้องทำที่แบ่งรายการออกเป็น 2 ประเภทคือ **ผลไม้ (Fruit)** และ **ผัก (Vegetable)**  
+- รายการหลักจะแสดงปุ่มสำหรับแต่ละรายการ  
+- เมื่อกดปุ่ม รายการนั้นจะถูกย้ายไปยังคอลัมน์ Fruit หรือ Vegetable ตามประเภท  
+- รายการที่ย้ายไปจะแสดงอยู่ในคอลัมน์นั้นเป็นเวลา 5 วินาที แล้วจะถูกย้ายกลับมาด้านล่างของรายการหลัก  
+- สามารถคลิกที่รายการในคอลัมน์ผลไม้/ผักเพื่อย้อนกลับไปยังรายการหลักได้ทันที
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## วิธีใช้งาน
 
-## Expanding the ESLint configuration
+1. เปิดหน้าเว็บและดูรายการสิ่งที่ต้องทำ  
+2. คลิกปุ่มรายการใด ๆ เพื่อย้ายไปยังคอลัมน์ที่ตรงกับประเภท  
+3. รายการที่ย้ายไปจะถูกย้ายกลับมาอัตโนมัติหลัง 5 วินาที หรือคลิกที่รายการในคอลัมน์ขวาเพื่อย้อนกลับทันที
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## เทคโนโลยีที่ใช้
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- React 
+- TypeScript  
+- Tailwind CSS
+- Vite
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## วิธีรันโปรเจกต์ (สำหรับคนพัฒนาต่อ)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+```bash
+npm install
+npm run dev
